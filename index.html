@@ -32,8 +32,10 @@
       }
       
       const reset = () => {
-        var results = document.querySelector(".result");
-        console.log(results)
+        var results = document.querySelectorAll(".result");
+        results.forEach((res) => {
+          console.log(res)
+        })
       }
     </script>
 </html>
