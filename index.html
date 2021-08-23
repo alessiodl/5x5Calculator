@@ -13,6 +13,7 @@
 
     <div class="result" id="1st"></div>
     <div class="result" id="2nd"></div>
+    <div class="result" id="3rd"></div>
   
     <button onclick=calc()>Calcola</button>
 
@@ -20,7 +21,9 @@
   <script type="text/javascript">
       const calc = () => {
         var max5rm = document.querySelector("#max5rm").value;
-        console.log(max5rm)
+        document.querySelector("#1st").innerHTML = max5rm * 0.6;
+        document.querySelector("#2st").innerHTML = max5rm * 0.7;
+        document.querySelector("#3rd").innerHTML = max5rm * 0.8;
       }
     </script>
 </html>
