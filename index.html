@@ -17,6 +17,7 @@
     <div class="result" id="third">...</div>
     <div class="result" id="fourth">...</div>
     <div class="result" id="fifth">...</div>
+    <div class="result" id="tripla">...</div>
    
     <button onclick=calc()>Calcola</button>
     <button onclick=reset()>Reset</button>
@@ -25,11 +26,12 @@
   <script type="text/javascript">
       const calc = () => {
         var max5rm = document.querySelector("#max5rm").value;
-        document.querySelector("#first").innerHTML = max5rm * 0.6 Kg;
-        document.querySelector("#second").innerHTML = max5rm * 0.7 Kg;
-        document.querySelector("#third").innerHTML = max5rm * 0.8 Kg;
-        document.querySelector("#fourth").innerHTML = max5rm * 0.9 Kg;
-        document.querySelector("#fifth").innerHTML = max5rm Kg;
+        document.querySelector("#first").innerHTML = "Prima serie: "+max5rm * 0.6;
+        document.querySelector("#second").innerHTML = "Seconda serie: "+max5rm * 0.7;
+        document.querySelector("#third").innerHTML = "Terza serie: "+max5rm * 0.8;
+        document.querySelector("#fourth").innerHTML = "Quarta serie: "+max5rm * 0.9;
+        document.querySelector("#fifth").innerHTML = "Quinta serie: "+max5rm;
+        document.querySelector("#tripla").innerHTML = "Tripla (solo giorno medio): "+max5rm;
       }
       
       const reset = () => {
