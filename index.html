@@ -9,14 +9,15 @@
   
   <body>
 
+    <lable for="max5rm">Max 5RM</label>
     <input type="number" id="max5rm"></input>
-
-    <div class="result" id="first"></div>
-    <div class="result" id="second"></div>
-    <div class="result" id="third"></div>
-    <div class="result" id="fourth"></div>
-    <div class="result" id="fifth"></div>
-  
+    
+    <div class="result" id="first">...</div></li>
+    <div class="result" id="second">...</div>
+    <div class="result" id="third">...</div>
+    <div class="result" id="fourth">...</div>
+    <div class="result" id="fifth">...</div>
+   
     <button onclick=calc()>Calcola</button>
     <button onclick=reset()>Reset</button>
 
@@ -34,7 +35,7 @@
       const reset = () => {
         var results = document.querySelectorAll(".result");
         results.forEach((res) => {
-          console.log(res)
+          res.innerHTML = "...";
         })
       }
     </script>
