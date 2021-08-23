@@ -11,11 +11,11 @@
 
     <input type="number" id="max5rm"></input>
 
-    <div class="result" id="1st"></div>
-    <div class="result" id="2nd"></div>
-    <div class="result" id="3rd"></div>
-    <div class="result" id="4th"></div>
-    <div class="result" id="5th"></div>
+    <div class="result" id="first"></div>
+    <div class="result" id="second"></div>
+    <div class="result" id="third"></div>
+    <div class="result" id="fourth"></div>
+    <div class="result" id="fifth"></div>
   
     <button onclick=calc()>Calcola</button>
     <button onclick=reset()>Reset</button>
@@ -24,11 +24,11 @@
   <script type="text/javascript">
       const calc = () => {
         var max5rm = document.querySelector("#max5rm").value;
-        document.querySelector("#1st").innerHTML = max5rm * 0.6;
-        document.querySelector("#2nd").innerHTML = max5rm * 0.7;
-        document.querySelector("#3rd").innerHTML = max5rm * 0.8;
-        document.querySelector("#4th").innerHTML = max5rm * 0.9;
-        document.querySelector("#5th").innerHTML = max5rm;
+        document.querySelector("#first").innerHTML = max5rm * 0.6;
+        document.querySelector("#second").innerHTML = max5rm * 0.7;
+        document.querySelector("#third").innerHTML = max5rm * 0.8;
+        document.querySelector("#fourth").innerHTML = max5rm * 0.9;
+        document.querySelector("#fifth").innerHTML = max5rm;
       }
       
       const reset = () => {
