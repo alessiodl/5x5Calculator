@@ -14,8 +14,11 @@
     <div class="result" id="1st"></div>
     <div class="result" id="2nd"></div>
     <div class="result" id="3rd"></div>
+    <div class="result" id="4th"></div>
+    <div class="result" id="5th"></div>
   
     <button onclick=calc()>Calcola</button>
+    <button onclick=reset()>Reset</button>
 
   </body>
   <script type="text/javascript">
@@ -24,6 +27,12 @@
         document.querySelector("#1st").innerHTML = max5rm * 0.6;
         document.querySelector("#2st").innerHTML = max5rm * 0.7;
         document.querySelector("#3rd").innerHTML = max5rm * 0.8;
+        document.querySelector("#4th").innerHTML = max5rm * 0.9;
+        document.querySelector("#5th").innerHTML = max5rm;
+      }
+      
+      const reset = () => {
+        document.querySelector(".result").innerHTML = "";
       }
     </script>
 </html>
